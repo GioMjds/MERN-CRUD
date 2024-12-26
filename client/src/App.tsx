@@ -48,7 +48,7 @@ function App() {
     }
   };
 
-  const deleteSample = async (id: any) => {
+  const deleteSample = async (id: number) => {
     const confirmDelete = window.confirm('Are you sure you want to delete this sample?');
     if (!confirmDelete) return;
     try {

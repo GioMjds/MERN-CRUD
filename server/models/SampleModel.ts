@@ -5,6 +5,4 @@ const sampleSchema = new mongoose.Schema({
     description: { type: String, required: true },
 });
 
-const SampleModel = mongoose.model('Sample', sampleSchema);
-
-module.exports = SampleModel;
+export const SampleModel = mongoose.model('Sample', sampleSchema);

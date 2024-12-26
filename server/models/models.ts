@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const mongoURI = "mongodb://127.0.0.1:27017/admin";
 
-const connectDB = async () => {
+export const connectDB = async () => {
     try {
         await mongoose.connect(mongoURI);
         console.log("MongoDB connected!");
@@ -11,5 +11,3 @@ const connectDB = async () => {
         process.exit(1);
     }
 };
-
-module.exports = connectDB;

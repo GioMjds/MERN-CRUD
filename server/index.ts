@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
+import { connectDB } from "./models/models";
 
 const express = require("express");
 const cors = require("cors");
-const connectDB = require("./models/models");
 const SampleModel = require("./models/SampleModel");
 const app = express();
 
